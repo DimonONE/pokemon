@@ -1,19 +1,51 @@
 @import "../../styles/mixin.scss";
-.homePage {
-  background-image: url("../../assets/images/bg.jpg") ;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 70px 10px;
-}
-.itemContainer {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
 
-  @include max-sm {
-    padding: 0 10px;
-    margin: 10px auto;
+.info {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  padding: 100px 0;
+  color: #000;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  .name {
+    font-size: 30px;
   }
-}
 
+  .weight,
+  .types {
+    padding: 2px;
+    background: $color-yellow;
+    border: 1px solid black;
+
+  }
+
+  .weight  {
+    background: #b0524c;
+  }
+
+  .name,
+  .types {
+    margin-bottom: 7px;
+  }
+
+  .card {
+    margin-top: 30px;
+    padding: 20px 30px;
+    box-shadow: $box-shadow;
+  }
+
+  .sprite {
+    min-width: 200px;
+    @include min-sm {
+      width: auto;
+      height: auto;
+      min-height: 300px;
+    }
+  }
+
+}

@@ -1,32 +1,5 @@
-import { ADD_POKEMONS } from "./constants";
-
-import { getPokemons } from "../api";
-
-export const addTodo = (p: any) => {
-  return (dispatch: any) => {
-    dispatch(addTodoStarted());
-    const gets = async () => {
-      const pokemon = await getPokemons();
-      console.log("pokemon +++", pokemon);
-    };
-    gets();
-  };
-};
-
-const addTodoSuccess = (todo: any) => ({
-  type: ADD_POKEMONS,
-  payload: {
-    ...todo,
-  },
-});
-
-const addTodoStarted = () => ({
-  type: ADD_POKEMONS,
-});
-
-// const addTodoFailure = (error) => ({
-//   type: ADD_POKEMONS,
-//   payload: {
-//     error,
-//   },
-// });
+export const ADD_POKEMONS = "ADD_POKEMONS";
+export const ADD_POKEMONS_TYPES = "ADD_POKEMONS_TYPES";
+export const ADD_POKEMON_INFO = "ADD_POKEMON_INFO";
+export const ADD_ALL_TYPES_POKEMON = "ADD_ALL_TYPES_POKEMON";
+export const ADD_FOUND_POKEMON = "ADD_FOUND_POKEMON";

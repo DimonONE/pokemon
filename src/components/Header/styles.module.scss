@@ -1,0 +1,36 @@
+@import "../../styles/mixin.scss";
+
+.header {
+  .toolbar{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logoLink {
+    color: $color-yellow;
+    text-decoration: none;
+    transition: 1s ease-in-out;
+
+    &:hover,
+    &:active {
+      color: rgba(244, 230, 45, 0.77);
+      .logoContainer .logo {
+        transform: scale(1.1);
+      }
+    }
+
+    .logoContainer{
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      max-width: 220px;
+
+      .logo {
+        height: 40px;
+      }
+    }
+  }
+
+}
+
+

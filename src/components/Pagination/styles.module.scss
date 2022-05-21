@@ -1,36 +1,9 @@
 @import "../../styles/mixin.scss";
-.homePage {
-  height: 100%;
-  min-height: 100vh;
-  background-image: url("../../assets/images/bg.jpg") ;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 70px 10px;
-}
-
-.pagination,
-.wrapper{
-  display: flex;
-  justify-content: center;
-}
 
 .pagination{
-}
-
-.wrapper {
-  .itemContainer {
-    display: flex;
-    padding: 10px;
-
-    @include max-md {
-      align-items: center;
-      justify-content: center;
-    }
-
-    @include max-sm {
-      padding: 0 10px;
-      margin: 10px auto;
-    }
-  }
+  background: $color-yellow;
+  padding: 5px 20px;
+  border-radius: 5%;
+  box-shadow: $box-shadow;
+  margin: 10px 0;
 }

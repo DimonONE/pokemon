@@ -1,15 +1,42 @@
 @import "../../styles/mixin.scss";
 
-.types {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
-
-  .text {
-    margin-bottom: 5px;
+.link {
+  &, .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
-  @include max-sm {
-    display: none;
+  .card {
+    max-width: 500px;
+    min-height: 300px;
+    transition: .4s linear;
+
+    .name {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      padding-bottom: 5px;
+    }
+
+    .name,
+    .types {
+      text-align: center;
+      border-left: 1px solid $color-yellow;
+      border-right: 1px solid $color-yellow;
+    }
+
+    &:hover {
+      transition: 1s ease-in-out;
+      box-shadow: $box-shadow
+    }
+
+    .cardImg{
+      transition: 1s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }

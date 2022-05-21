@@ -1,0 +1,15 @@
+@import "../../styles/mixin.scss";
+
+.types {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+
+  .text {
+    margin-bottom: 5px;
+  }
+
+  @include max-sm {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../styles/mixin.scss";
+.homePage {
+  background-image: url("../../assets/images/bg.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 10px;
+}
+.itemContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  @include max-sm {
+    padding: 0 10px;
+    margin: 10px auto;
+  }
+}
+
